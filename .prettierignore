@@ -1,0 +1,13 @@
+# Ignore artifacts:
+.env
+.gitignore
+.next
+.prettierignore
+.prettierrc
+build
+jsconfig.json
+next.config.mjs
+node_modules
+public
+package.json
+package-lock.json

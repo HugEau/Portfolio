@@ -1,0 +1,18 @@
+{
+	"semi": false,
+	"arrowParens": "always",
+	"trailingComma": "none",
+	"useTabs": true,
+	"tabWidth": 2,
+	"plugins": ["@trivago/prettier-plugin-sort-imports"],
+	"importOrder": [
+		"^(react|next(?!-intl))(/.*)?$",
+		"^(next-intl|App/i18n)(/.*)?$",
+		"^App/(app|components|contexts|store|hooks|server)(?!.*\\.scss$)(/.*)?$",
+		"^(@fortawesome/react-fontawesome|@fortawesome(/.*))$",
+		"^App/.*\\.scss$",
+		"^[./]"
+	],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true
+}

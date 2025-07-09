@@ -1,0 +1,38 @@
+@use "App/assets/styles/variables.scss" as *;
+
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	backdrop-filter: blur(10px);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	padding: 0 20px;
+
+	&__title {
+		font-size: 24px;
+		font-family: "Britanny", sans-serif;
+		font-weight: bold;
+		color: $white;
+	}
+
+	&__nav {
+		display: flex;
+		gap: 20px;
+		padding: 0;
+		margin: 0;
+
+		a {
+			color: $white;
+			text-decoration: none;
+			font-size: 16px;
+			transition: color 0.3s;
+
+			&:hover {
+				color: lighten($white, 20%);
+			}
+		}
+	}
+}

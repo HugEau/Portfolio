@@ -1,0 +1,15 @@
+@use "App/assets/styles/variables.scss" as *;
+
+@font-face {
+	font-family: "Britanny";
+	src: url("../fonts/Brittany.ttf") format("truetype");
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+	background: $background-color;
+}
