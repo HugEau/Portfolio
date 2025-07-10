@@ -1,3 +1,4 @@
+@use "sass:color" as color;
 @use "App/assets/styles/variables.scss" as *;
 
 .header {
@@ -31,7 +32,7 @@
 			transition: color 0.3s;
 
 			&:hover {
-				color: lighten($white, 20%);
+				color: color.adjust($white, $lightness: -10%)
 			}
 		}
 	}
