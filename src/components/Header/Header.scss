@@ -1,22 +1,31 @@
 @use "sass:color" as color;
 @use "App/assets/styles/variables.scss" as *;
 
-.header {
-	position: sticky;
+header {
+	padding: 1rem;
+	position: fixed;
+	width: 100%;
 	top: 0;
 	left: 0;
+	z-index: 1000;
+}
+
+.header {
+	background-color: rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(10px);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	z-index: 1000;
 	padding: 0 20px;
+	border-radius: 1rem;
 
 	&__title {
 		font-size: 24px;
 		font-family: "Britanny", sans-serif;
 		font-weight: bold;
 		color: $white;
+		text-decoration: none;
+		padding: 1rem;
 	}
 
 	&__nav {
@@ -24,15 +33,18 @@
 		gap: 20px;
 		padding: 0;
 		margin: 0;
+		list-style: none;
 
 		a {
 			color: $white;
 			text-decoration: none;
 			font-size: 16px;
 			transition: color 0.3s;
+			filter: grayscale(100%);
+			text-transform: uppercase;
 
 			&:hover {
-				color: color.adjust($white, $lightness: -10%)
+				color: color.adjust($white, $lightness: -15%);
 			}
 		}
 	}
