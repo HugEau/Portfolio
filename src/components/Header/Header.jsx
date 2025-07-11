@@ -4,7 +4,9 @@ export default function Header() {
 	return (
 		<header>
 			<div className="header">
-				<a className="header__title" href="/">HC</a>
+				<a className="header__title" href="/">
+					HC
+				</a>
 				<ul className="header__nav">
 					<li className="header__nav--item">
 						<a href="#about" className="header__nav--link">

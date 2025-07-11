@@ -2,33 +2,86 @@
 @use "App/assets/styles/variables.scss" as *;
 
 .hero {
-    position: relative;
+	position: relative;
 
-    &__content {
-        position: relative;
-        z-index: 2;
-        padding: 10em 2em 1em;
-        transition: all 0.3s ease-in-out;
+	&__content {
+		position: relative;
+		z-index: 2;
+		padding: 10em 2em 1em;
+		transition: all 0.3s ease-in-out;
 
-        @media (min-width: 768px) {
-            padding: 14em 4em 3em;
-        }
+		@media (min-width: 768px) {
+			padding: 14em 4em 3em;
+		}
 
+		&--title {
+			font-size: 3.2em;
+			font-weight: 400;
+			margin-bottom: 0.4em;
+			transition: all 0.3s ease-in-out;
 
-        &--title {
-            font-size: 3.2em;
-            font-weight: 400;
-            margin-bottom: 0.4em;
-            transition: all 0.3s ease-in-out;
+			@media (min-width: 768px) {
+				font-size: 4.8em;
+			}
+		}
 
-            @media (min-width: 768px) {
-                font-size: 4.8em;
-            }
-        }
+		&--subtitle {
+			font-size: 2em;
+			margin: 0.4em 0 1em;
+		}
+	}
+}
 
-        &--subtitle {
-            font-size: 2em;
-            margin: 0.4em 0 1em;
-        }
-    }
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4em 2em;
+	text-align: center;
+	transition: all 0.3s ease-in-out;
+
+	@media (min-width: 768px) {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 6em 4em;
+	}
+
+	&__knowledge {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1.5em;
+		margin-top: 2em;
+
+		&--container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			width: 100%;
+			transition: all 0.3s ease-in-out;
+			gap: 0.5em;
+			width: fit-content;
+
+			&:hover {
+				.about__knowledge--text {
+					opacity: 1;
+				}
+			}
+		}
+
+		&--text {
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+		}
+
+		&--icon {
+			height: 2.5em;
+			transition: color 0.3s ease-in-out;
+
+			&:hover {
+				color: color.scale($white, $lightness: -10%);
+			}
+		}
+	}
 }
