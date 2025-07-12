@@ -43,31 +43,31 @@ export default function AnimatedAurora(props) {
 				0: "rgba(80,180,255,0.7)",
 				0.35: "rgba(120,255,210,0.25)",
 				0.7: "rgba(180,255,240,0.13)",
-				1: "rgba(32,20,60,0)"
+				1: "rgba(32,20,60,0.1)"
 			},
 			{
 				0: "rgba(90,120,255,0.6)",
 				0.3: "rgba(160,120,255,0.18)",
 				0.65: "rgba(200,180,255,0.08)",
-				1: "rgba(32,20,60,0)"
+				1: "rgba(32,20,60,0.1)"
 			},
 			{
 				0: "rgba(110,220,200,0.5)",
 				0.45: "rgba(120,255,210,0.22)",
 				0.8: "rgba(180,120,255,0.12)",
-				1: "rgba(32,20,60,0)"
+				1: "rgba(32,20,60,0.1)"
 			},
 			{
 				0: "rgba(60,80,180,0.5)",
 				0.5: "rgba(120,255,210,0.13)",
 				0.8: "rgba(120,120,255,0.18)",
-				1: "rgba(32,20,60,0)"
+				1: "rgba(32,20,60,0.1)"
 			},
 			{
 				0: "rgba(120,180,255,0.45)",
 				0.5: "rgba(180,255,240,0.09)",
 				0.8: "rgba(200,180,255,0.13)",
-				1: "rgba(32,20,60,0)"
+				1: "rgba(32,20,60,0.1)"
 			}
 		]
 
@@ -79,7 +79,7 @@ export default function AnimatedAurora(props) {
 			)
 			ctx.fillStyle = grad
 			ctx.globalCompositeOperation = "lighter"
-			ctx.filter = "blur(10px)"
+			// ctx.filter = "blur(10px)"
 
 			// Top wave
 			const topPoints = []
