@@ -151,7 +151,8 @@ export default function AnimatedAurora(props) {
 				width: "100%",
 				height: "100%",
 				zIndex: -1,
-				pointerEvents: "none"
+				pointerEvents: "none",
+				filter: "blur(5px)"
 			}}
 		/>
 	)
